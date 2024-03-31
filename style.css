@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 10%;
+    width: 25%;
+    max-width: 100vw;
+}
+p {
+    font-size: 2rem;
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+em > strong > p{
+    font-size: 5px;
+}
+
+li{
+    background-color: tan;
+}
+
+li:nth-child(3n){
+    background-color: darkseagreen;
+}
+
+li:nth-child(even){
+    background-color: lightgrey;
+
+}
+
+/* 
+every 2nd list's marker:
+    li:nth-child(even)::marker
+vs
+every 2nd marker on every list:
+    li::marker:nth-child(even)
+*/
+li:nth-child(even)::marker{
+    color: blue;
+}
+
+/*
+ul:nth-child(2n) {
+    list-style-type: none;
+    color: hotpink;
+}
+*/
+
+h3 {
+    color: red;
+    background-color: lightpink;
+}
+
+#bananas {
+    color: blue;
+}
+
+.coolclass {
+    color:bisque;
+}
+
+h1{
+    color: blue;
+    background-color: green;
+}
+
+h1{
+    color: #09bffc;
+}
